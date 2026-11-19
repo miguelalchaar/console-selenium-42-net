@@ -87,7 +87,7 @@ public class BuscaDesafioTest
             _driver.Url.Contains("duckduckgo.com", StringComparison.OrdinalIgnoreCase),
             "O teste deveria ter saído da página de resultados do DuckDuckGo.");
 
-        _driver.Navigation.Back();
+       _driver.Navigate().Back();
         resultados.AguardarRetornoAosResultados();
 
         Assert.IsTrue(
